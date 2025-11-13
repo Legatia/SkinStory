@@ -49,11 +49,11 @@ export function MiniAppProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // when the frame is ready, if the frame is not added, prompt the user to add the frame
-    // Only attempt in MiniKit context (when addFrame is available)
-    if (isFrameReady && addFrame && !context?.client?.added) {
+    // Only attempt in MiniKit context
+    if (isFrameReady && !context?.client?.added) {
       handleAddFrame();
     }
-  }, [context?.client?.added, handleAddFrame, isFrameReady, addFrame]);
+  }, [context?.client?.added, handleAddFrame, isFrameReady]);
 
   return (
     <MiniAppContext.Provider
