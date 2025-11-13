@@ -220,7 +220,7 @@ export default function UploadPage() {
               <label htmlFor="soulbound" className="text-sm text-gray-600">
                 I understand this tattoo will be minted as a <strong>soul-bound NFT</strong>,
                 permanently linked to my identity and non-transferable. Just like my real tattoo,
-                it's mine forever.
+                it&apos;s mine forever.
               </label>
             </div>
 

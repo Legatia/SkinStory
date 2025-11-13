@@ -61,6 +61,7 @@ export async function GET(
             src={`data:image/png;base64,${Buffer.from(logoImage).toString(
               "base64"
             )}`}
+            alt="Logo"
             style={{
               width: "100px",
               marginBottom: "20px",
